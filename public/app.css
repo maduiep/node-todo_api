@@ -68,3 +68,15 @@ header h2 {
 .task:hover span {
  opacity: 1;
 }
+
+.done {
+ text-decoration: line-through;
+ color: #bdc3c7;
+}
+
+li span {
+ float: right;
+ color: #c0392b;
+ transition: all 0.3s;
+ opacity: 0;
+}
