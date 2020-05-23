@@ -33,4 +33,14 @@ router.get('/:todoId', (req, res) => {
     })
 })
 
+router.put('/:todoId', (req, res) => {
+  db.Todo.findOneAndUpdate({ _id: req.params.todoId }, req.body, { new: true })
+    .then((todo) => {
+      res.json(todo)
+    })
+    .catch((err) => {
+      res.send(err)
+    })
+})
+
 module.exports = router
