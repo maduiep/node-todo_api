@@ -80,3 +80,7 @@ li span {
  transition: all 0.3s;
  opacity: 0;
 }
+
+li span:hover{
+ color: #e74c3c;
+}
