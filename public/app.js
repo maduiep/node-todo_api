@@ -1,4 +1,4 @@
-$(window).ready(function () {
+$(document).ready(function () {
   $.getJSON('/api/todos')
     .then(addTodos)
 
@@ -8,7 +8,11 @@ $(window).ready(function () {
     }
   })
 
-  $('.list span').on('click', function () {
+  // $('.list').on('click', 'li', function () {
+  //   alert('clicked')
+  // })
+
+  $('.list').on('click', 'span', function () {
     removeTodo($(this).parent())
   })
 })
