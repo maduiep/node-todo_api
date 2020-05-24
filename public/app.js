@@ -53,6 +53,6 @@ function removeTodo(todo) {
       todo.remove()
     })
     .catch((err) => {
-      alert(err)
+      console.log(err)
     })
 }
